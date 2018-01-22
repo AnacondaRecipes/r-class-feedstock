@@ -10,8 +10,8 @@ package:
 source:
   fn: class_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/class_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/class/class_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/class_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/class/class_{{ version }}.tar.gz
   sha256: 18b876dbc18bebe6a00890eab7d04ef72b903ba0049d5ce50731406a82426b9c
 
 
