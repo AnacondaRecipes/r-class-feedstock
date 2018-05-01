@@ -14,22 +14,15 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/class/class_{{ version }}.tar.gz
   sha256: 18b876dbc18bebe6a00890eab7d04ef72b903ba0049d5ce50731406a82426b9c
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 4
 
-
   # This is required to make R link correctly on Linux.
   rpaths:
     - lib/R/lib/
     - lib/
-
 
 requirements:
   build:
